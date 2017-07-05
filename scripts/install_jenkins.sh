@@ -9,7 +9,7 @@ apt-get update
 apt-get install -y docker-engine
 systemctl enable docker
 systemctl start docker
-usermod -aG docker ubuntu
+usermod -aG docker root
 
 # run jenkins
 mkdir -p /var/jenkins_home
